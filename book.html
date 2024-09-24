@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="p2" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>book now!</title>
+</head>
+<body class="body2">
+    <header>
+            <img src="logo.png" alt="Logo" id="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#feature">Features</a></li>
+                <li><a href="#prcing">Pricing</a></li>
+                <li id="book"><a href="book.html">book now!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+    <form action="/submit-booking" method="post" class="form2">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname">
+            <br><label for="phone">Phone Number:</label>
+            <input type="number" id="phone" name="phone">
+            <label for="idcard">ID Card Number:</label>
+            <input type="text" id="idcard" name="idcard">
+        </fieldset>
+        <fieldset class="bi">
+            <legend>Booking Information</legend>
+            <label for="hotel">hotel Name:</label>
+            <input type="text" id="hotel" name="hotel"><br>
+            <label for="start-date" style="padding-top:50px ;">Start date:</label>
+            <input type="date" id="start-date" name="start-date">
+            <label for="end-date">End date:</label>
+            <input type="date" id="end-date" name="end-date">
+            <br><label for="people">Number of Adults:</label>
+            <input type="number" id="people" name="people" min="0">
+            <label for="people">Number of kids:</label>
+            <input type="number" id="people" name="people" min="0">
+            <br><label for="room-type">Room type:</label>
+            <select id="room-type" name="room-type">
+                <option value="single">single</option>
+                <option value="double">double</option>
+                <option value="triple">triple</option>
+                <option value="quadriple">quadriple</option>
+            </select>
+            <label for="accommodation">Type of Accommodation:</label>
+            <select id="accommodation" name="accommodation">
+                <option value="allInclusive">All Inclusive</option>
+                <option value="allInSoft">All In Soft</option>
+                <option value="halfPension">Half Pension</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Payment Information</legend>
+            <label for="payment">Payment Mode:</label><br>
+            <input type="radio" id="online" name="payment" value="online">
+            <label for="online">Online</label><br>
+            <input type="radio" id="cash" name="payment" value="cash">
+            <label for="cash">Cash</label><br>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+</body>
+</html>
+
+
